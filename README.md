@@ -28,16 +28,6 @@ It mimics how a **SOC (Security Operations Center) analyst** might monitor and p
 - At the end, all encrypted logs are decrypted and displayed (if valid key exists)
 ----
 
-## Logging Activity
-
-All events (success or block) are recorded in `login_log.txt` using:
-```python
-with open("login_log.txt", "a") as file:
-    file.write(f"Login Successful - {current_time}")
-
-This mimics how SOC analyst log authentication events.
----
-
 ## Tech Stack
 - Python 3
 - cryptography
@@ -62,3 +52,14 @@ Mercy712
 SOC 1 Analyst| leveraging Python to build hands-on SOC tools | Cybersecurity Learner | Curious. Persistent. Always experimenting. 
 📍 Connect with me on LinkedIn via www.linkedin.com/in/mercy-ikeh-8946482aa 
 
+
+
+## Logging Activity
+
+All events (success or block) are recorded in `login_log.txt` using:
+```python
+with open("login_log.txt", "a") as file:
+    file.write(f"Login Successful - {current_time}")
+
+This mimics how SOC analyst log authentication events.
+---
